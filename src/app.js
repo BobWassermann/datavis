@@ -11,7 +11,7 @@ function getJSON(data, element) {
 
       resolve.data.map((item) =>
         content += 
-        `<p class="class">
+        `<p class=`${item.Country.replace(' ', '_')}`>
           Land: ${item.Country}, Jaar: ${item.Year}
         </p>`
       )
